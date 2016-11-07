@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: no.westerdals:utils:test-jar:tests:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/westerdals/utils/0.0.1-SNAPSHOT/utils-0.0.1-SNAPSHOT-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/no/westerdals/utils/0.0.1-SNAPSHOT/utils-0.0.1-SNAPSHOT-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/westerdals/utils/0.0.1-SNAPSHOT/utils-0.0.1-SNAPSHOT-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

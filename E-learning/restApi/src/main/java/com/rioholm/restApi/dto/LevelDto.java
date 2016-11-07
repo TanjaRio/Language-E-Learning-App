@@ -1,8 +1,8 @@
 package com.rioholm.restApi.dto;
 
+import com.rioholm.language.entity.QuizEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import no.westerdals.quiz.entity.SubCategory;
 
 import java.util.List;
 
@@ -15,16 +15,16 @@ import java.util.List;
 public class LevelDto {
 
     @ApiModelProperty("The name  of the category")
-    public String categoryName;
+    public int level;
 
     @ApiModelProperty("The subcategories of the root category")
-    public List<SubCategory> subCategoryList;
+    public List<QuizEntity> questions;
 
     public LevelDto(){}
 
-    public LevelDto(String categoryName, List<SubCategory> subCategoryList) {
-        this.categoryName = categoryName;
-        this.subCategoryList = subCategoryList;
+    public LevelDto(int level, List<QuizEntity> questions) {
+        this.questions = questions;
+        this.level = level;
     }
 
 

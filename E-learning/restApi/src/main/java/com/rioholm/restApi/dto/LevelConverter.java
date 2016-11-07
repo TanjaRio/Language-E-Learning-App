@@ -1,5 +1,6 @@
 package com.rioholm.restApi.dto;
 
+import com.rioholm.language.entity.LevelEntity;
 import no.westerdals.quiz.entity.RootCategory;
 
 import java.util.List;
@@ -12,12 +13,12 @@ import java.util.stream.Collectors;
  * Westerdals Oslo ACT
  */
 public class LevelConverter {
-    public static LevelDto transform(RootCategory entity){
+    public static LevelDto transform(LevelEntity entity){
         Objects.requireNonNull(entity);
 
         LevelDto dto = new LevelDto();
-        dto.categoryName = entity.getCategoryName();
-        dto.subCategoryList = entity.getSubCategoryList();
+        dto.level = entity.getLevel();
+        dto.questions = entity.getQuestions();
         return dto;
     }
 

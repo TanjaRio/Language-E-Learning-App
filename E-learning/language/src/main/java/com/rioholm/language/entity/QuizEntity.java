@@ -14,7 +14,7 @@ public class QuizEntity {
     private Long quizId;
 
     @ManyToOne
-    private SubSubCategory subSubCategory;
+    private LevelEntity levelEntity;
 
     private String question;
 
@@ -42,14 +42,6 @@ public class QuizEntity {
         this.quizId = quizId;
     }
 
-    public SubSubCategory getSubSubCategory() {
-        return subSubCategory;
-    }
-
-    public void setSubSubCategory(SubSubCategory subSubCategory) {
-        this.subSubCategory = subSubCategory;
-    }
-
     public String getQuestion() {
         return question;
     }
@@ -72,5 +64,21 @@ public class QuizEntity {
 
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    public LevelEntity getLevelEntity() {
+        return levelEntity;
+    }
+
+    public void setLevelEntity(LevelEntity levelEntity) {
+        this.levelEntity = levelEntity;
+    }
+
+    public boolean isCorrectAnswer() {
+        return isCorrectAnswer;
+    }
+
+    public void setCorrectAnswer(boolean correctAnswer) {
+        isCorrectAnswer = correctAnswer;
     }
 }
