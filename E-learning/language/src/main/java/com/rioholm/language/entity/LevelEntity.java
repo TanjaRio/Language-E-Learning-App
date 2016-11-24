@@ -17,6 +17,9 @@ public class LevelEntity {
     @NotNull
     private int level;
 
+    @ManyToOne
+    private LanguageEntity language;
+
     @OneToMany
     private List<QuizEntity> questions;
 

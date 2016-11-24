@@ -13,7 +13,6 @@
         <module>language</module>
         <module>restApi</module>
         <module>utils</module>
-        <module>utils</module>
     </modules>
 
 

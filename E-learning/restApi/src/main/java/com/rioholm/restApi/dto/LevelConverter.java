@@ -1,7 +1,6 @@
 package com.rioholm.restApi.dto;
 
 import com.rioholm.language.entity.LevelEntity;
-import no.westerdals.quiz.entity.RootCategory;
 
 import java.util.List;
 import java.util.Objects;
@@ -22,11 +21,11 @@ public class LevelConverter {
         return dto;
     }
 
-    public static List<LevelDto> transform(List<LevelDto> entities){
+    public static List<LevelDto> transform(List<LevelEntity> entities){
         Objects.requireNonNull(entities);
 
         return entities.stream()
-                .map(LevelDto::transform)
+                .map(LevelConverter::transform)
                 .collect(Collectors.toList());
     }
 }
